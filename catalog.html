@@ -23,46 +23,67 @@
 </header>
 <main class="container">
     <div class="subtitle-name">
-        <h2>Средства для ухода</h2>
+        <h1>Средства для ухода</h1>
         <ul class="navigation">
-            <li>Главная</li>
-            <li>Магазин</li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="">Магазин</a></li>
+            <li><span>Средства для ухода</span></li>
         </ul>
-        <span>Средства для ухода</span>
+
     </div>
     <section class="checkboxes">
-        <div class="manufacturer">
-            <b>Производители</b>
+        <form action="#">
+        <fieldset class="manufacturer">
+            <legend>Производители</legend>
             <label><input type="checkbox" name="Baxter of California" id="Baxter of California" checked>
                 Baxter of California</label>
-            <label><input type="checkbox" name="Mr Natty" id="Mr Natty">
+            <label><input type="checkbox" name="Mr Natty" value="Mr Natty">
                 Mr Natty</label>
-            <label><input type="checkbox" name="Cuavecito" id="Cuavecito" checked>
+            <label><input type="checkbox" name="Cuavecito" value="Cuavecito" checked>
                 Cuavecito</label>
-            <label><input type="checkbox" name="Malin+Goetz" id="Malin+Goetz">
+            <label><input type="checkbox" name="Malin+Goetz" value="Malin+Goetz">
                 Malin+Goetz</label>
-            <label><input type="checkbox" name="Murray's" id="Murray's">
+            <label><input type="checkbox" name="Murray's" value="Murray's">
                 Murray's</label>
-            <label> <input type="checkbox" name="American Crew" id="American Crew" checked>
+            <label> <input type="checkbox" name="American Crew" value="American Crew" checked>
                 American Crew</label>
-        </div>
-        <div class="groups">
-            <label> <input type="radio" name="shawing" id="shawing">
+        </fieldset>
+        <fieldset class="groups">
+            <legend>Группы товаров</legend>
+            <label> <input type="radio" name="radio" value="shawing">
                 Бритвенные принадлежности</label>
-            <label> <input type="radio" name="preparations" id="preparations" checked>
+            <label> <input type="radio" name="radio" value="preparations" checked>
                 Средства для ухода</label>
-            <label> <input type="radio" name="accessories" id="accessories">
+            <label> <input type="radio" name="radio" value="accessories">
                 Аксессуары</label>
-        </div>
-
+        </fieldset>
+            <input type="submit" value="отправить">
+        </form>
 
     </section>
     <section class="prodict-groups">
         <div class="prodict-item">
             <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
+                </div>
+            </a>
+            <div>                                   <!-- заменено как в уроке,
+                                                проверить при верстке этот метод -->
+
+                <span class="price">0000 руб.</span>
+                <a href="#">Купить</a>
+
             </div>
+        </div>
+        <div class="prodict-item">
+            <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
+                </div>
+            </a>
             <div>
                 <div class="price">0000 руб.</div>
                 <div class="buy">
@@ -72,9 +93,11 @@
         </div>
         <div class="prodict-item">
             <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
-            </div>
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
+                </div>
+            </a>
             <div>
                 <div class="price">0000 руб.</div>
                 <div class="buy">
@@ -84,9 +107,11 @@
         </div>
         <div class="prodict-item">
             <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
-            </div>
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
+                </div>
+            </a>
             <div>
                 <div class="price">0000 руб.</div>
                 <div class="buy">
@@ -96,9 +121,11 @@
         </div>
         <div class="prodict-item">
             <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
-            </div>
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
+                </div>
+            </a>
             <div>
                 <div class="price">0000 руб.</div>
                 <div class="buy">
@@ -108,21 +135,11 @@
         </div>
         <div class="prodict-item">
             <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
-            </div>
-            <div>
-                <div class="price">0000 руб.</div>
-                <div class="buy">
-                    <a href="#">Купить</a>
+            <a href="#">
+                <div class="description">
+                    <p>Название товара</p>
                 </div>
-            </div>
-        </div>
-        <div class="prodict-item">
-            <img class="item-photo-catalog" src="#" width="" height="" alt="item pic">
-            <div class="description">
-                <p>Название товара</p>
-            </div>
+            </a>
             <div>
                 <div class="price">0000 руб.</div>
                 <div class="buy">
